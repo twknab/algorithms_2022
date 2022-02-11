@@ -5,7 +5,7 @@ Output should be alphabetical.
 
 E.g, function output may look something like this:
 
-numbersOfLettersInString("playground")
+numberOfCharactersInString("playground")
 {
   a: 1,
   d: 1,
@@ -21,7 +21,7 @@ numbersOfLettersInString("playground")
 
 */
 
-function numberOfLettersInString(string) {
+function numberOfCharactersInString(string) {
   let characterCount = {};
   // Sort the string alphabetically so Obj output is alphbatetical
   string = string.split("").sort().join("");
@@ -36,14 +36,14 @@ function numberOfLettersInString(string) {
   return characterCount;
 };
 
-let lettersOutput = numberOfLettersInString("hello");
+let lettersOutput = numberOfCharactersInString("hello");
 console.log(lettersOutput);
 // {e: 1, h: 1, l: 2, o: 1}
 
-lettersOutput = numberOfLettersInString("racecar");
+lettersOutput = numberOfCharactersInString("racecar");
 console.log(lettersOutput);
 // {a: 2, c: 2, e: 1, r: 2}
 
-lettersOutput = numberOfLettersInString("winning");
+lettersOutput = numberOfCharactersInString("winning");
 console.log(lettersOutput);
 // {g: 1, i: 2, n: 3, w: 1}
