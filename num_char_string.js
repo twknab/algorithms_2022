@@ -26,7 +26,7 @@ function numberOfCharactersInString(string) {
   // Sort the string alphabetically so Obj output is alphbatetical
   string = string.split("").sort().join("");
   for (let i = 0; i < string.length; i++) {
-    let letter = string[i];
+    const letter = string[i];
     if (letter in characterCount) {
       characterCount[letter] = characterCount[letter] + 1;
     } else {
