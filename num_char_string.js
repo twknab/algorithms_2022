@@ -22,6 +22,9 @@ numberOfCharactersInString("playground")
 */
 
 function numberOfCharactersInString(string) {
+  if (typeof(string) !== 'string') {
+    throw "Input must be a string.";
+  }
   let characterCount = {};
   // Sort the string alphabetically so Obj output is alphbatetical
   string = string.split("").sort().join("");
@@ -47,3 +50,4 @@ console.log(lettersOutput);
 lettersOutput = numberOfCharactersInString("winning");
 console.log(lettersOutput);
 // {g: 1, i: 2, n: 3, w: 1}
+
