@@ -6,6 +6,7 @@ Output should be alphabetical.
 E.g, function output may look something like this:
 
 numberOfCharactersInString("playground")
+Output:
 {
   a: 1,
   d: 1,

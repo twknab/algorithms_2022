@@ -4,7 +4,8 @@ provided string is a Palindrome.
 
 Example)
 isPalindrome("Racecar");
-// true
+Output:
+true
 */
 
 /*
