@@ -13,3 +13,5 @@ NOTE: Each algorithm is given 30 minutes to solve.
     - arr1 and arr2 are the same length
     - arr2 is much bigger than arr1
     - Analyze time and space complexity of each
+- Balanced Brackets (`balanced_brackets.js`):
+  - Given a string of brackets, e.g, "{([])}", write a function `balancedBrackets(string)` that returns a `boolean` if the brackets are balanced.
