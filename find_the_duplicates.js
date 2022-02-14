@@ -24,6 +24,7 @@ Output:
 [2,3,6]
 */
 
+// Medicore (faster than solution 2 but slower than solution 3)
 // Solution 1: Using built in methods
 // Sub-optimal
 function findDuplicates(arr1, arr2) {
@@ -44,6 +45,7 @@ let duplicates = findDuplicates(array1, array2);
 // [2, 4, 5, 7, 19, 30, 100]
 
 
+// Slowest
 // Solution 2: No built in methods
 // Nested loops: least efficient
 function findDuplicatesAgain(arr1, arr2) {
@@ -65,6 +67,7 @@ let arrayB = [0, 1, 2, 4, 5, 7, 10, 19, 30, 100, 220];
 let dupesAgain = findDuplicatesAgain(arrayA, arrayB);
 // [2, 4, 5, 7, 19, 30, 100]
 
+// Fastest
 // Solution 3: Greatest efficiency & No built in methods
 // e.g, no nested looping
 function findDupes(arr1, arr2) {
