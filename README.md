@@ -2,9 +2,9 @@
 
 NOTE: Each algorithm is given 30 minutes to solve.
 
-NOTE: Add `console.time('foo');` to start of function, and 
+NOTE: Add `console.time('foo');` to start of function, and
 `console.timeEnd('foo')`; to end (before return), to see millisecond run time.
-For algorithms with multiple solutions this is a great way to see which one has 
+For algorithms with multiple solutions this is a great way to see which one has
 faster runtime.
 
 - Prime Numbers (`prime_numbers.js`):

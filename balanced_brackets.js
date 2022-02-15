@@ -20,6 +20,7 @@ function balancedBrackets(string) {
     "{": "}",
     "[": "]",
     "(": ")",
+    "<": ">",
   };
   
   for (let i = 0; i < string.length; i++) {
@@ -40,11 +41,16 @@ function balancedBrackets(string) {
     }
   }
   // Brackets are balanced
-  return true;
+  return queue.length === 0 ? true : false;
 }
 
 let bracketsString = "{([])}";
 let areBracketsBalanced = balancedBrackets(bracketsString);
+console.log(areBracketsBalanced);
+// true
+
+bracketsString = "{([<>])}";
+areBracketsBalanced = balancedBrackets(bracketsString);
 console.log(areBracketsBalanced);
 // true
 
@@ -59,6 +65,11 @@ console.log(areBracketsBalanced);
 // true
 
 bracketsString = "({[{[]]})";
+areBracketsBalanced = balancedBrackets(bracketsString);
+console.log(areBracketsBalanced);
+// false
+
+bracketsString = "<";
 areBracketsBalanced = balancedBrackets(bracketsString);
 console.log(areBracketsBalanced);
 // false
