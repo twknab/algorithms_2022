@@ -2,6 +2,11 @@
 
 NOTE: Each algorithm is given 30 minutes to solve.
 
+NOTE: Add `console.time('foo');` to start of function, and 
+`console.timeEnd('foo')`; to end (before return), to see millisecond run time.
+For algorithms with multiple solutions this is a great way to see which one has 
+faster runtime.
+
 - Prime Numbers (`prime_numbers.js`):
   - Write a function `findPrimes(n)` that returns all prime numbers less than or equal to n.
 - Characters in a String (`num_char_string.js`):
