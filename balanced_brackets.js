@@ -15,7 +15,7 @@ false
 */
 
 function balancedBrackets(string) {
-  let queue = [];
+  let stack = [];
   const pairings = {
     "{": "}",
     "[": "]",
@@ -25,14 +25,14 @@ function balancedBrackets(string) {
   
   for (let i = 0; i < string.length; i++) {
     const char = string[i];
-    // Add opening bracket to queue if detected
+    // Add opening bracket to stack if detected
     if (char in pairings) {
-      queue.push(char);
+      stack.push(char);
     }
-    // Remove from queue if matching closing bracket is detected
+    // Remove from stack if matching closing bracket is detected
     else {
-      if (queue.length > 0 && Object.values(pairings).includes(char)) {
-        let last = queue.pop();
+      if (stack.length > 0 && Object.values(pairings).includes(char)) {
+        let last = stack.pop();
         if (pairings[last] !== char) {
           // Brackets are not balanced
           return false;
@@ -41,7 +41,7 @@ function balancedBrackets(string) {
     }
   }
   // Brackets are balanced
-  return queue.length === 0 ? true : false;
+  return stack.length === 0 ? true : false;
 }
 
 let bracketsString = "{([])}";
