@@ -73,3 +73,8 @@ bracketsString = "<";
 areBracketsBalanced = balancedBrackets(bracketsString);
 console.log(areBracketsBalanced);
 // false
+
+bracketsString = "{(])}";
+areBracketsBalanced = balancedBrackets(bracketsString);
+console.log(areBracketsBalanced);
+// false
