@@ -15,7 +15,7 @@ Output:
 {([])}
 */
 
-const PAIRINGS = {
+const pairings = {
   "{": "}",
   "[": "]",
   "(": ")",
@@ -32,8 +32,8 @@ function fixBrackets(string) {
   let closedBrackets = [];
   for (let i = 0; i < string.length; i++) {
     const char = string[i];
-    const isOpeningBracket = char in PAIRINGS === true;
-    const isClosingBracket = Object.values(PAIRINGS).includes(char) === true;
+    const isOpeningBracket = char in pairings === true;
+    const isClosingBracket = Object.values(pairings).includes(char) === true;
 
     if (isOpeningBracket) {
       openBrackets.push(char);
@@ -49,16 +49,16 @@ function fixBrackets(string) {
   while (i < openBrackets.length || j >= 0) {
     const open = openBrackets[i];
     const closed = closedBrackets[j];
-    if (PAIRINGS[open] !== closed) {
+    if (pairings[open] !== closed) {
       let missingBracket;
       if (open === undefined) {
-        missingBracket = Object.keys(PAIRINGS).find(
-          (key) => PAIRINGS[key] === closed
+        missingBracket = Object.keys(pairings).find(
+          (key) => pairings[key] === closed
         );
         openBrackets.push(missingBracket);
       }
       if (closed === undefined) {
-        missingBracket = PAIRINGS[open];
+        missingBracket = pairings[open];
         closedBrackets.unshift(missingBracket);
       }
     }
