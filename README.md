@@ -20,3 +20,5 @@ faster runtime.
     - Analyze time and space complexity of each
 - Balanced Brackets (`balanced_brackets.js`):
   - Given a string of brackets, e.g, "{([])}", write a function `balancedBrackets(string)` that returns a `boolean` if the brackets are balanced.
+- Fix Mismatched Brackets (`fix_brackets.js`):
+  - Given a string of mis-matched brackets, similar to above, e.g, "{([])}", write a function `fixBrackets(string)`, that returns it properly fixed. If the brackets do not need to be fixed, return the string as is. 
