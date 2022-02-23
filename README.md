@@ -22,3 +22,7 @@ faster runtime.
   - Given a string of brackets, e.g, "{([])}", write a function `balancedBrackets(string)` that returns a `boolean` if the brackets are balanced.
 - Fix Mismatched Brackets (`fix_brackets.js`):
   - Given a string of mis-matched brackets, similar to above, e.g, "{([])}", write a function `fixBrackets(string)`, that returns it properly fixed. If the brackets do not need to be fixed, return the string as is. 
+- Recursive Sigma (`recursive_sigma.js`):
+  - Write a function (`recursiveSigma(number)`) that given a number, returns sum of integers.
+- Recursive Factorial (`recursive_factorial.js`):
+  - Write a function (`recursiveFactorial(number)`) that given a number, returns the product of the integers from 1 to that number.
